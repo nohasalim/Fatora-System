@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <!-- Local Styling -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <main class="min-vh-100 bg-info py-4">
+    <h1 style="width: fit-content" class="text-center bg-danger mx-auto px-4 py-1 rounded">
+      Fatoora System
+    </h1>
+    <div class="container">
+      <form>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <label for="productName" class="form-label">Product Name:</label>
+            <input type="text" class="form-control" id="productName" placeholder="Samsung s20 ultra" required />
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <label for="productPrice" class="form-label">Price:</label>
+            <input type="number" class="form-control" id="productPrice" placeholder="1000" required />
+          </div>
+          <div class="col-12 col-md-3 col-lg-2 mb-3">
+            <label for="total" class="form-label">Total:</label>
+            <input type="number" class="form-control" id="total" placeholder="2000" readonly />
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <label for="productTax" class="form-label">Tax:</label>
+            <input type="number" class="form-control" id="productTax" placeholder="20" required />
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <label for="productAds" class="form-label">Ads:</label>
+            <input type="number" class="form-control" id="productAds" placeholder="20" />
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <label for="productDiscount" class="form-label">Discout:</label>
+            <input type="number" class="form-control" id="productDiscount" placeholder="50" />
+          </div>
+        </div>
+        <button class="btn btn-success text-dark w-100">
+          Add
+        </button>
+      </form>
+      <div class="search-products d-flex rounded overflow-hidden mt-3">
+        <input class="form-control rounded-top-0 rounded-end-0" type="search" name="productName"
+          placeholder="Search by name ..." />
+        <span class="bg-danger px-3 d-flex align-items-center justify-content-center fw-bold">Name</span>
+      </div>
+      <table class="table mt-2">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Tax</th>
+            <th>Ads</th>
+            <th>Discount</th>
+            <th>Total</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>

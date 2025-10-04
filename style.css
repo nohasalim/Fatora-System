@@ -1,0 +1,16 @@
+table .bin,
+table .edit {
+  transition: 0.3s;
+  cursor: pointer;
+}
+table .bin:hover {
+  color: #dc3545;
+}
+table .edit:hover {
+  color: #ffc107;
+}
+
+/* #total {
+  display: block;
+  width: 100px;
+} */
